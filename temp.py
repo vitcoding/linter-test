@@ -2,7 +2,6 @@ import os
 
 from dotenv import load_dotenv
 
-import re
 load_dotenv()
 
 NUMBER = os.environ.get("NUMBER")
@@ -13,3 +12,6 @@ if __name__ == "__main__":
         num += i
 
     print(num)
+
+
+import re
