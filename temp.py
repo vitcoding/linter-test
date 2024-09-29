@@ -4,3 +4,4 @@ if __name__ == "__main__":
         num += i
 
     print(num)
+    print(n)
