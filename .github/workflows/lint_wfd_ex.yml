@@ -1,4 +1,4 @@
-name: Lint_workflow_dispatch
+name: Lint_workflow_dispatch_exercise
 
 on:
   workflow_dispatch:
