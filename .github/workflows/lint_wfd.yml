@@ -1,3 +1,4 @@
+# Actual version
 name: Lint_workflow_dispatch
 
 on:

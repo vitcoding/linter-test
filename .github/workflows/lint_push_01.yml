@@ -1,11 +1,16 @@
-# Actual version
-name: Lint_push
+# The first version
 
-on:
-  push:
-    paths:
-      - '*.py'
+name: Lint_push (v1)
 
+# on:
+#   push:
+#     paths:
+#       - '*.py'
+on: 
+    workflow_dispatch:
+      inputs:
+        tags:
+          required: false
 
 jobs:
   flake8_py3:
