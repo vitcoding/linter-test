@@ -1,16 +1,9 @@
-name: Lint
+name: Lint_push
 
 on:
   push:
     paths:
       - '*.py'
-
-  workflow_dispatch:
-    inputs:
-      tags:
-        description: 'Run'
-        required: false
-        type: boolean
 
 
 jobs:
