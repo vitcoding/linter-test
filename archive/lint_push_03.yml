@@ -1,0 +1,49 @@
+name: Lint_push (v1.03)
+
+# on: [push, pull_request]
+
+on: 
+    workflow_dispatch:
+      inputs:
+        tags:
+          required: false
+
+jobs:
+  flake8-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install flake8
+        run: pip install flake8
+      - name: flake8 Lint
+        uses: py-actions/flake8@v2
+
+
+# name: flake8 Lint
+
+# on: [push, pull_request]
+
+# jobs:
+#   flake8-lint:
+#     runs-on: ubuntu-latest
+#     name: Lint
+#     steps:
+#       - name: Check out source repository
+#         uses: actions/checkout@v3
+#       - name: Set up Python environment
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: "3.11"
+#       - name: flake8 Lint
+#         uses: py-actions/flake8@v2
+#         with:
+#           ignore: "F401"
+#           exclude: "src/ignoreme.py"
+#           max-line-length: "100"
+#           path: "src"
+#           plugins: "flake8-bugbear==22.1.11 flake8-black"
