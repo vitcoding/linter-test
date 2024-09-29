@@ -1,7 +1,14 @@
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+NUMBER = os.environ.get("NUMBER")
+
 if __name__ == "__main__":
-    num = 0
-    for i in range(5):
+    num = int(NUMBER)
+    for i in range(3):
         num += i
 
     print(num)
-    print(n)
