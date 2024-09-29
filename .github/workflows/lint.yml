@@ -1,4 +1,4 @@
-name: Lint_workflow_dispatch_exercise
+name: Lint
 
 on: 
   push:
