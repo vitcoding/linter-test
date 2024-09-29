@@ -5,12 +5,12 @@ on:
     paths:
       - '*.py'
 
-  # workflow_dispatch:
-  #   inputs:
-  #     tags:
-  #       description: 'Run'
-  #       required: false
-  #       type: boolean
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'Run'
+        required: false
+        type: boolean
 
 
 jobs:
