@@ -4,9 +4,6 @@ on:
   push: 
   pull_request:
   workflow_dispatch:
-    inputs:
-      tags:
-        required: false
 
 jobs:
   flake8-lint:
